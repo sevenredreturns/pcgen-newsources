@@ -1,0 +1,186 @@
+# CVS $Revision$ $Author$ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+SOURCELONG:Planar Adventures	SOURCESHORT:PA	SOURCEWEB:https://paizo.com/products/btpya1am	SOURCEDATE:2018-06
+
+# Class Feature Blank
+#	KEY:xxx ~
+#	CATEGORY:Special Ability
+#	TYPE:xxx Class Feature.SpecialQuality
+#	SOURCEPAGE:p.
+#	DESC:
+
+# Race or Racial Trait Blank
+#	KEY:xxx ~
+#	CATEGORY:Special Ability
+#	TYPE:xxx Race Trait.Race Trait.SpecialQuality
+#	SOURCEPAGE:p.
+#	DESC:
+
+
+###Block: Barbarian Abilities
+# Ability Name	Unique Key			Category of Ability		Type						Description																																																																																																																																																																																																																					Modify VAR					Source Page
+#	Rage		KEY:Barbarian ~ Rage	CATEGORY:Special Ability	TYPE:Barbarian Class Feature.Rage	DESC:You can call upon inner reserves of strength and ferocity, granting you additional combat prowess. You can rage for %1 rounds per day. You can enter rage as a free action. The total number of rounds of rage per day is renewed after resting for 8 hours, although these hours do not need to be consecutive. While in rage, you gain a +%2 morale bonus to your Strength and a +%3 morale bonus to Constitution, as well as a +%4 morale bonus on Will saves. In addition, you take a -2 penalty to Armor Class. The increase to Constitution grants you %5 hit points, but these disappear when the rage ends and are not lost first like temporary hit points. While in rage, you cannot use any Charisma-, Dexterity-, or Intelligence-based skills (except Acrobatics, Fly, Intimidate, and Ride) or any ability that requires patience or concentration. You can end your rage as a free action and are fatigued after rage for a number of rounds equal to 2 times the number of rounds spent in the rage. You cannot enter a new rage while fatigued or exhausted but can otherwise enter rage multiple times during a single encounter or combat. If you fall unconscious, your rage immediately ends, placing you in peril of death.|RageDuration|RageStrBonus|RageConBonus|RageSaveBonus|(RageConBonus/2)*TL	BONUS:VAR|RageLVL|BarbarianLVL	SOURCEPAGE:p.32
+
+#	Defensive Training	KEY:Dwarf ~ Defensive Training	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.Dwarf Racial Trait	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Defensive Training],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DwarfDefensiveTraining]	DEFINE:RacialDefensiveTrainingBonus|0	DESC:Dwarves get a +%1 dodge bonus to AC against humanoid creatures of the giant subtype.|RacialDefensiveTrainingBonus		BONUS:VAR|RacialDefensiveTrainingBonus|4		SOURCEPAGE:p.21	ASPECT:CombatBonus|+%1 dodge bonus to AC against humanoid creatures of the giant subtype.|RacialDefensiveTrainingBonus
+
+#insert your data here
+
+#==============
+#Aphorite
+#==============
+
+###Block Racial Abilities
+Racial Traits ~ Aphorite	CATEGORY:Internal
+
+###Block Racial Defaults
++2 Strength +2 Intelligence, -2 Dexterity		KEY:Aphorite ~ Ability Scores			CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.Racial Ability Scores			VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Aphorite_ReplaceAbilityScores=true																			DESC:Aphorites are strong and intelligent, but move and react somewhat stiffly																																BONUS:STAT|STR|2|TYPE=Racial	BONUS:STAT|INT|2|TYPE=Racial	BONUS:STAT|DEX|-2|TYPE=Racial																																																													SOURCEPAGE:p.225
+Medium							KEY:Aphorite ~ Size				CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Racial Size		VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Aphorite_ReplaceSize=True																					DESC:Aphorites are Medium creatures and have no bonuses of penalties due to their size.																																																																																																										SOURCEPAGE:p.225
+Normal Speed						KEY:Aphorite ~ Speed				CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Racial Speed		VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Aphorite_ReplaceSpeed=true																					DESC:Aphorites have a base speed of 30 feet																																																																																																																	SOURCEPAGE:p.225
+Darkvision							KEY:Aphorite ~ Vision				CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Racial Vision		VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Aphorite_ReplaceVision=true																				DESC:Aphorites can see in the dark up to 60 feet.																																					BONUS:VAR|HasRacialVision|1																			VISION:Darkvision (60)																																																	SOURCEPAGE:p.225
+Skilled							KEY:Aphorite ~ Skilled				CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality							!PREFACT:1,ABILITIES,Aphorite_ReplaceSkilled=true																				DESC:Aphorites gain a +2 racial bonus on checks with a single Craft skill of their choice.																														BONUS:ABILITYPOOL|Aphorite Skilled Craft Bonus|1																																																																			SOURCEPAGE:p.225
+Spell-Like Ability					KEY:Aphorite ~ Aphorite Magic			CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Special Quality.Applied Bonus		!PREFACT:1,ABILITIES,Aphorite_ReplaceAphoriteMagic=true		DEFINE:Aphorite_AphoriteMagic_CL|0	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Protection from Chaos		DESC:Aphorites can use protection from chaos once per day as a spell-like ability [caster level equal to the aphorite’s class level].|Aphorite_AphoriteMagic_CL																			BONUS:VAR|Aphorite_AphoriteMagic_CL|1																																																																					SOURCEPAGE:p.225
+Crystalline Dust						KEY:Aphorite ~ Crystalline Dust		CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Supernatural					!PREFACT:1,ABILITIES,Aphorite_ReplaceCrystallineDust=true																			DESC:An aphorite can manifest a haze of crystalline dust that forms into indistinct runes and glyphs surrounding its body. This effect grants the aphorite a 20%% miss chance against melee and ranged attacks. Activating this dust is a move action, but it can be maintained each round as a free action. The effect cannot be disrupted, but it ends immediately if the aphorite is killed, paralyzed, stunned, knocked unconscious, or otherwise prevented from taking a free action to maintain it each round. An aphorite can use this ability a number of rounds per day equal to its Hit Dice, but the rounds do not need to be consecutive.																SOURCEPAGE:p.225
+Aphorite Resistances					KEY:Aphorite ~ Aphorite Resistances		CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Extrodinary					!PREFACT:1,ABILITIES,Aphorite_ReplaceAphoriteResistances=true																		DESC:Aphorites have electricity resistance 5 and a +2 bonus on saves versus poison and mind-affecting effects.																											BONUS:VAR|ElectricityResistanceBonus|5|TYPE=Resistance	BONUS:VAR|SaveBonus_vs_Poison|2|TYPE=Racial	BONUS:VAR|SaveBonus_vs_Mind-Effects|2|TYPE=Racial																																																	SOURCEPAGE:p.225		ASPECT:SaveBonus|Aphorites get a +2 racial bonus to saves vs. Poison and Mind-Control effects
+Languages							KEY:Aphorite ~ Languages			CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Racial Language		VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Aphorite_ReplaceLanguages=true																				DESC:Aphorites speak Common and either Celestial or Infernal. An aphorite with a high Intelligence score can choose from the following as bonus languages: Abyssal, Aquan, Auran, Celestial, Ignan, Infernal, or Terran.									TEMPLATE:Race Bonus Language ~ Abyssal|Race Bonus Language ~ Draconic|Race Bonus Language ~ Aquan|Race Bonus Language ~ Auran|Race Bonus Language ~ Celestial|Race Bonus Language ~ Ignan|Race Bonus Language ~ Infernal|Race Bonus Language ~ Terran									AUTO:LANG|Common																								SOURCEPAGE:p.225
+
+
+#Block Skilled
+Skilled Craft Bonus					KEY:Aphorite ~ Skilled Craft Bonus		CATEGORY:Internal			TYPE:Aphorite Skilled Craft Bonus																																											DESC:Gnomes receive a +2 racial bonus on a Craft skill of their choice.			STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=Craft																								BONUS:SKILL|LIST|2|TYPE=Racial
+
+#Block Language
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Planar Language|!PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoritePlanarLanguage
+Planar Language		KEY:Aphorite ~ Planar Language	CATEGORY:Special Ability	TYPE:RacialTraits.Aphorite Racial Trait.Aphorite Racial Default.SpecialQuality.Extrodinary			PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Aphorite ~ Planar Language],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoritePlanarLanguage]		DESC:Aphorites speak either Celestial or Infernal.																																					BONUS:ABILITYPOOL|Aphorite Language|1																																											SOURCEPAGE:p.225
+Celestial			KEY:Aphorite ~ Celestial Language	CATEGORY:Special Ability	TYPE:AphoriteLanguageTrait																																																															AUTO:LANG|Celestial
+Infernal			KEY:Aphorite ~ Infernal Language	CATEGORY:Special Ability	TYPE:AphoriteLanguageTrait																																																															AUTO:LANG|Infernal
+
+
+#===============
+#Duskwalker
+#===============
+###Block Racial Abilities
+Racial Traits ~ Duskwalker	CATEGORY:Internal
+
+###Block Racial Defaults
++2 Dexterity –2 Constitution +2 Wisdom		KEY:Duskwalker ~ Ability Scores		CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.Racial Ability Scores			VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Duskwalker_ReplaceAbilityScores=true																			DESC:Duskwalkers are agile and wise, but their bodies are fragile.																																		BONUS:STAT|DEX|2|TYPE=Racial	BONUS:STAT|CON|-2|TYPE=Racial	BONUS:STAT|WIS|2|TYPE=Racial																																																													SOURCEPAGE:p.231
+Medium							KEY:Duskwalker ~ Size				CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality.Racial Size		VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Duskwalker_ReplaceSize=True																				DESC:Duskwalkers are Medium creatures and have no bonuses of penalties due to their size.																																																																																																										SOURCEPAGE:p.231
+Normal Speed						KEY:Duskwalker ~ Speed				CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality.Racial Speed		VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Duskwalker_ReplaceSpeed=true																				DESC:Duskwalkers have a base speed of 30 feet																																																																																																																	SOURCEPAGE:p.231
+Darkvision							KEY:Duskwalker ~ Vision				CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality.Racial Vision	VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Duskwalker_ReplaceVision=true																				DESC:Duskwalkers can see in the dark up to 60 feet.																																					BONUS:VAR|HasRacialVision|1																			VISION:Darkvision (60)																																																	SOURCEPAGE:p.231
+Skilled							KEY:Duskwalker ~ Skilled			CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality							!PREFACT:1,ABILITIES,Duskwalker_ReplaceSkilled=true																				DESC:Duskwalkers gain a +2 racial bonus on Knowledge (religion) and Heal checks.																																BONUS:SKILL|Knowledge (Religion),Heal|2|TYPE=Racial																																																																			SOURCEPAGE:p.231
+Ghost Hunter						KEY:Duskwalker ~ Ghost Hunter			CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality.Supernatural					!PREFACT:1,ABILITIES,Duskwalker_ReplaceGhostHunter=true																			DESC:In a duskwalker’s hands, any weapon can strike true against spectral beings. A duskwalker’s nonmagical weapons deal half damage to incorporeal creatures, as if they were magic weapons, and her magic weapons can deal critical hits and precision damage, even if they do not have the ghost touch property. Once per day as a standard action, a duskwalker can focus her natural revulsion toward undead. If she does so, she treats all weapons she wields as if they had the ghost touch property for 1 minute.																																				SOURCEPAGE:p.231
+Ward Against Corruption					KEY:Duskwalker ~ Ward Against Corruption	CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality.Extraordinary				!PREFACT:1,ABILITIES,Duskwalker_ReplaceWardAgainstCorruption=true																		DESC:Duskwalkers gain a +2 racial bonus on saving throws against negative energy and death effects, as well as the spell-like and supernatural abilities of undead and sahkils. They are immune to all abilities that would transform their bodies or souls into undead.																																																																												SOURCEPAGE:p.231		ASPECT:SaveBonus|+2 racial bonus on saves vs negative energy, death effects, and spell-like and supernatural abilities of undead and sahkils. Immune to to all abilities that would transform their bodies or souls into undead.
+Languages							KEY:Duskwalker ~ Languages			CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality.Racial Language	VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Duskwalker_ReplaceLanguages=true																				DESC:Duskwalkers begin play speaking Common and one of the following: Abyssal, Celestial or Infernal. Duskwalkers with high Intelligence scores can choose from the following bonus languages: Abyssal, Celestial, Draconic, Dwarven, Elven, Halfling, Infernal, or Protean.	TEMPLATE:Race Bonus Language ~ Abyssal|Race Bonus Language ~ Celestial|Race Bonus Language ~ Draconic|Race Bonus Language ~ Dwarven|Race Bonus Language ~ Elven|Race Bonus Language ~ Halfling|Race Bonus Language ~ Infernal|Race Bonus Language ~ Protean									AUTO:LANG|Common																							SOURCEPAGE:p.231
+
+
+#Block Language
+CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Planar Language|!PREABILITY:1,CATEGORY=Special Ability,TYPE.DuskwalkerPlanarLanguage
+Planar Language		KEY:Duskwalker ~ Planar Language	CATEGORY:Special Ability	TYPE:RacialTraits.Duskwalker Racial Trait.Duskwalker Racial Default.SpecialQuality.Extrodinary			PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Duskwalker ~ Planar Language],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DuskwalkerPlanarLanguage]		DESC:Duskwalkers speak either Celestial or Infernal.																																					BONUS:ABILITYPOOL|Duskwalker Language|1																																											SOURCEPAGE:p.231
+Abyssal			KEY:Duskwalker ~ Abyssal Language	CATEGORY:Special Ability	TYPE:DuskwalkerLanguageTrait																																																															AUTO:LANG|Abyssal
+Celestial			KEY:Duskwalker ~ Celestial Language	CATEGORY:Special Ability	TYPE:DuskwalkerLanguageTrait																																																															AUTO:LANG|Celestial
+Infernal			KEY:Duskwalker ~ Infernal Language	CATEGORY:Special Ability	TYPE:DuskwalkerLanguageTrait																																																															AUTO:LANG|Infernal
+
+
+
+
+#=====
+#Ganzi
+#=====
+
+###Block Racial Abilities
+# Ability Name		Category of Ability
+Racial Traits ~ Ganzi	CATEGORY:Internal
+
+###Block Racial Defaults
+# Ability Name						Unique Key					Category of Ability		Type															Visible		Prohibited Fact								Description																																						Bonus Ability Pool				Bonus to skill						Stat bonus														Modify VAR																																		Vision			Source Page		Aspects
++2 Constitution +2 Charisma -2 Intelligence	KEY:Ganzi ~ Ability Scores		CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.Racial Ability Scores		VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Ganzi_ReplaceAbilityScores=true		DESC:Ganzis are passionate, creative, and resilient, but they have difficulty focusing on intellectual pursuits.																																				BONUS:STAT|CHA|2|TYPE=Racial	BONUS:STAT|CON|2|TYPE=Racial	BONUS:STAT|INT|-2|TYPE=Racial																																								SOURCEPAGE:p.235
+Medium							KEY:Ganzi ~ Size				CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality.Racial Size	VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Ganzi_ReplaceSize=True			DESC:Ganzis are Medium creatures and have no bonuses of penalties due to their size.																																																																																														SOURCEPAGE:p.235
+Normal Speed						KEY:Ganzi ~ Speed				CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality.Racial Speed	VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Ganzi_ReplaceSpeed=true			DESC:Ganzis have a base speed of 30 feet																																																																																																						SOURCEPAGE:p.235
+Darkvision							KEY:Ganzi ~ Vision			CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality.Racial Vision	VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Ganzi_ReplaceVision=true			DESC:Ganzis can see in the dark up to 60 feet.																																																														BONUS:VAR|HasRacialVision|1																															VISION:Darkvision (60)	SOURCEPAGE:p.235
+Maelstrom Resistance					KEY:Ganzi ~ Maelstrom Resistance	CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality						!PREFACT:1,ABILITIES,Ganzi_ReplaceMaelstromResistance=true	DESC:Ganzis have acid resistance 5, electricity resistance 5, and sonic resistance 5, and they gain a +2 racial bonus on saving throws against spells of the polymorph subschool.																																								BONUS:VAR|AcidResistanceBonus|5|TYPE=Resistance	BONUS:VAR|ElectricityResistanceBonus|5|TYPE=Resistance	BONUS:VAR|SonicResistanceBonus|5|TYPE=Resistance	BONUS:VAR|SaveBonus_vs_Polymorph|2|TYPE=Racial					SOURCEPAGE:p.235	ASPECT:SaveBonus|+2 racial bonus on saves vs polymorph subschool
+Skilled							KEY:Ganzi ~ Skilled			CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality						!PREFACT:1,ABILITIES,Ganzi_ReplaceSkilled=true			DESC:Ganzis gain a +2 racial bonus on Sense Motive and Survival checks.																																			BONUS:SKILL|Sense Motive,Survival|2|TYPE=Racial																																																							SOURCEPAGE:p.235
+Ganzi Oddity						KEY:Ganzi ~ Ganzi Oddity		CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality						!PREFACT:1,ABILITIES,Ganzi_ReplaceGanziOddity=true		DESC:As creatures infused with the entropic forces of the Maelstrom, all ganzis have a distinct and unusual oddity that manifests as a physical or magical ability that sets the ganzi apart.The quibble ability is the most common.								BONUS:ABILITYPOOL|Ganzi Oddity Bonus|1																																																								SOURCEPAGE:p.235
+Languages							KEY:Ganzi ~ Languages			CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality.Racial Language	VISIBLE:DISPLAY	!PREFACT:1,ABILITIES,Ganzi_ReplaceLanguages=true		DESC:Ganzis begin play speaking Common and one of the following: Abyssal, Celestial, or Protean. Ganzis with high Intelligence scores can select any of those languages as bonus languages, along with Aklo, Aquan, Auran, Ignan, Sylvan, or Terran.						TEMPLATE:Race Bonus Language ~ Abyssal|Race Bonus Language ~ Aklo|Race Bonus Language ~ Aquan|Race Bonus Language ~ Auran|Race Bonus Language ~ Celestial|Race Bonus Language ~ Ignan|Race Bonus Language ~ Protean|Race Bonus Language ~ Sylvan|Race Bonus Language ~ Terran									AUTO:LANG|Common							SOURCEPAGE:p.235
+
+
+#Block LanguageCHOOSE:LANG|Abyssal|Celestial|Protean
+CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	ABILITY:Ganzi Racial Trait|AUTOMATIC|Ganzi ~ Planar Language|!PREABILITY:1,CATEGORY=Special Ability,TYPE.GanziPlanarLanguage
+Planar Language		KEY:Ganzi ~ Planar Language		CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Racial Default.SpecialQuality.Extrodinary			PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Planar Language],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.GanziPlanarLanguage]		DESC:Ganzis speak either Celestial or Infernal.																																					BONUS:ABILITYPOOL|Ganzi Language|1																																											SOURCEPAGE:p.235
+Abyssal			KEY:Ganzi ~ Abyssal Language		CATEGORY:Special Ability	TYPE:GanziLanguageTrait																																																															AUTO:LANG|Abyssal
+Celestial			KEY:Ganzi ~ Celestial Language	CATEGORY:Special Ability	TYPE:GanziLanguageTrait																																																															AUTO:LANG|Celestial
+Protean			KEY:Ganzi ~ Protean Language		CATEGORY:Special Ability	TYPE:GanziLanguageTrait																																																															AUTO:LANG|Protean
+
+###Block Ganzi Oddity
+# Ability Name		Unique Key					Category of Ability		Type															Description																																																																																																																							Stackable?	Multiple?	Choose															Auto Weapon Prof					Bonus to skill					Modify VAR			Source Page		Aspects
+Chaos Champion		KEY:Ganzi ~ Chaos Champion		CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Oddity Bonus.SpecialQuality.Supernatural		DESC:Ganzis with a lineage linked to the einherji often become crusaders for the forces of entropy and excel in combat against lawful beings. The ganzi can smite law once per day as a swift action, targeting a lawful foe. She adds her Charisma modifier as a bonus on attack rolls and gains a bonus on damage rolls equal to her Hit Dice. Once activated, smite law persists until the target is dead or the ganzi rests, whichever comes first.																																																																																					SOURCEPAGE:p.235
+Entropic Flesh		KEY:Ganzi ~ Entropic Flesh		CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Oddity Bonus.SpecialQuality.Extraordinary	DESC:Ganzis with lineages that link strongly to chaos beasts retain some of their ancestors' immunity to transformation. In addition to gaining a +2 bonus on Escape Artist checks and to CMD against grapple combat maneuvers, when such ganzis are affected by a hostile transmutation effect (such as polymorphing or petrification), they can attempt a new saving throw at the start of their next turn to end the effect. They gain a +4 bonus on this second saving throw, but if they fail, the transmutation effect persists as long as it normally would.																																																								BONUS:SKILL|Escape Artist|2|TYPE=Racial	BONUS:VAR|CMD_Grapple|2	SOURCEPAGE:p.235	ASPECT:SaveBonus|Attempt a second savings throw with +4 against transmuation effects on the following turn
+Prehensile Tail		KEY:Ganzi ~ Prehensile Tail		CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Oddity Bonus.SpecialQuality.Extraordinary	DESC:Ganzis with lineages that are particularly influenced by the presence of proteans often have colorful feathers, scales, or skin, and a long serpentine tail. This tail can be used to carry items. While ganzis with this oddity cannot wield weapons with their tails, they can use their tails to retrieve small, stowed objects carried on their persons as a swift action.																																																																																																	SOURCEPAGE:p.235
+Quibble			KEY:Ganzi ~ Quibble			CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Oddity Bonus.SpecialQuality.Supernatural		DESC:For most ganzis, the influence of chaos is relatively subtle and manifests as an ability to infect others with entropy and unexpected luck (be it good luck or bad). Once per day as an immediate action, a ganzi can twist probability and alter the luck of a single creature within 20 feet, forcing it to reroll a single d20 roll it has just made. The target must take the second result, even if it is worse. A ganzi can use this ability after the target has rolled but must use it before the GM declares whether the roll was a success or failure. Unwilling creatures can resist a ganzi's quibble with a successful Will save (DC = 10 + half the ganzi's level + the ganzi's Charisma modifier). This is a curse effect.																																							SOURCEPAGE:p.235
+Spell-Like Ability	KEY:Ganzi ~ Spell-Like Ability	CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Oddity Bonus.SpecialQuality.SpellLike		DESC:Ganzis whose chaotic influences rise from regions other than the Maelstrom or its inhabitants often manifest an oddity that duplicates the effects of a specific spell. Such ganzis gain one of the following spell-like abilities, usable once per day at a caster level equal to the ganzi's HD: alter self, blur, detect thoughts, hideous laughter, minor image, shatter, or spider climb.																																																						STACK:NO	MULT:YES	CHOOSE:SPELLS|Alter Self|Blur|Detect Thoughts|Hideous Laughter|Minor Image|Shatter|Spider Climb																					SOURCEPAGE:p.235
+Weaponplay			KEY:Ganzi ~ Weaponplay			CATEGORY:Special Ability	TYPE:RacialTraits.Ganzi Racial Trait.Ganzi Oddity Bonus.SpecialQuality.Extraordinary	DESC:Ganzis with lineages that link to the valkyries manifest their heritage in their skill in combat. Such ganzis are always proficient with all simple and martial weapons, and they can qualify for feats normally available only to fighters (such as Weapon Specialization) even if they don't have any fighter class levels.						DEFINE:FighterWeaponQualifyLVL|0	ABILITY:Special Ability|AUTOMATIC|TYPE=FighterWeaponQualify		BONUS:VAR|FighterWeaponQualifyLVL|TL																																																																														AUTO:WEAPONPROF|TYPE.Simple|TYPE.Martial												SOURCEPAGE:p.235
+
+
+###Block:
+# Ability Name							Aspects
+CATEGORY=Special Ability|Ganzi ~ Ganzi Oddity.MOD	ASPECT:NAME|Ganzi Oddity (Chaos Champion)|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Chaos Champion
+CATEGORY=Special Ability|Ganzi ~ Ganzi Oddity.MOD	ASPECT:NAME|Ganzi Oddity (Entropic Flesh)|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Entropic Flesh
+CATEGORY=Special Ability|Ganzi ~ Ganzi Oddity.MOD	ASPECT:NAME|Ganzi Oddity (Prehensile Tail)|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Prehensile Tail
+CATEGORY=Special Ability|Ganzi ~ Ganzi Oddity.MOD	ASPECT:NAME|Ganzi Oddity (Quibble)|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Quibble
+CATEGORY=Special Ability|Ganzi ~ Ganzi Oddity.MOD	ASPECT:NAME|Ganzi Oddity (Spell-Like Ability)|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability
+CATEGORY=Special Ability|Ganzi ~ Ganzi Oddity.MOD	ASPECT:NAME|Ganzi Oddity (Weaponplay)|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Weaponplay
+
+###Block:
+CATEGORY=Special Ability|Ganzi ~ Spell-Like Ability.MOD	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Alter Self,12+CHA|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability (Alter Self)
+CATEGORY=Special Ability|Ganzi ~ Spell-Like Ability.MOD	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Blur,12+CHA|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability (Blur)
+CATEGORY=Special Ability|Ganzi ~ Spell-Like Ability.MOD	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Detect Thoughts,12+CHA|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability (Detect Thoughts)
+CATEGORY=Special Ability|Ganzi ~ Spell-Like Ability.MOD	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Hideous Laughter,12+CHA|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability (Hideous Laughter)
+CATEGORY=Special Ability|Ganzi ~ Spell-Like Ability.MOD	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Minor Image,12+CHA|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability (Minor Image)
+CATEGORY=Special Ability|Ganzi ~ Spell-Like Ability.MOD	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Shatter,12+CHA|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability (Shatter)
+CATEGORY=Special Ability|Ganzi ~ Spell-Like Ability.MOD	SPELLS:Racial|TIMES=1|CASTERLEVEL=TL|Spider Climb,12+CHA|PREABILITY:1,CATEGORY=Special Ability,Ganzi ~ Spell-Like Ability (Spider Climb)
+
+#Weaponplay needs fighter class requirement bypass
+
+
+
+
+
+
+#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
+#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
+#
+#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Feat File tags" to find
+#out how the tags in the feats file work. Some of the tags used here are global tags. You will see an alphabetical
+#listing of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
+#
+# Abilities are the newest method for all aspects of class & race abilities. Currently we use hidden feats to emulate
+# class and racial abilities. The advent of Abilities allows us to use one standard format for a variety of things.
+# Generally Abilities are exactly the same in format as a Feat with the exception of a NEW tag CATEGORY which tells
+# PCGen what the ability is to be categoried as - example: My Ability is part of the my_abilities category, So I can add
+# points only to the my_abilities allowing very small and restricted lists. Another example would be Fighter Bonus feats.
+#
+# Feat and ability are used through out this example as they almost the same thing - ABILITY can also be used to add "Feats"
+# using the CATEGORY:FEAT tag.
+# You can also use PREFEAT for any CATEGORY:FEAT, for the rest you'll need to use PREABILITY:x,CATEGORY=<category>,Foo,TYPE.Bar (x is the number)
+#####1st Example
+
+#####
+#Each ability takes one line, just like a feat, and the first field must be the abilities' name. In the Example the name of the ability is My Ability.
+#When naming feats you should only use parentheses at the end of the name if the name is not duplicated elsewhere. This is
+#because of how PCGen names abilities which can be taken multiple times. For example, the Feat/ability Weapon Focus when taken will display
+#as Weapon Focus(Dagger). Another example is Armor Proficiency (Light), there is no feat named Armor Proficiency so this name
+#is fine. What is happening is when PCGen finds a feat with parentheses that duplicates the name of another feat it assumes
+#that feat is an instance of the one without parentheses and does not display the one with parentheses.
+#
+#The TYPE tag is holding a . (period) delimited list of the types the ability/feat is.
+#
+#The DESC tag is used to hold the description of the Ability/Feat. In our files we usually keep the description brief, so the user
+#still need to own the book to make use of of the data, but for your personal files can get as elaborate as you want there.
+#
+#The MULT tag determines if a ability/feat can be taken multiple times. If the value is set to YES, then you MUST also use a CHOOSE
+#tag.
+#
+#The CHOOSE tag must be paired with a MULT:YES tag in feats for it to work properly. It will display a popup window that asks
+#for a selection according to what is being called for. There is a multitude of existing CHOOSE tags in PCGen. If you are
+#looking into the documentation under List File Tag Index, you can find them listed under the topic "CHOOSE tags".
+#
+#The BONUS tags are a group of similar tags, that grant some form of Bonus to another already existing tag. To read a description
+#of them, look in the List File Tag Index under the topic "Bonus tags".
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the feat. This will be displayed in PCGen.

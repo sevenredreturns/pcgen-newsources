@@ -1,0 +1,124 @@
+# CVS $Revision: $ $Author: $ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+# Created January, 2015 Tom Parker
+
+###Block: Racial Traits
+# Name								Dataformat			Required	Selectable		Visible	Displayname									Explanation
+#=======
+#Aphorite
+#=======
+
+FACTDEF:ABILITY|Aphorite_ReplaceAbilityScores		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Ability Scores		EXPLANATION:Replaces the Ability Scores
+FACTDEF:ABILITY|Aphorite_ReplaceSize			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Size				EXPLANATION:Replaces the Medium Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceSpeed			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Speed				EXPLANATION:Replaces the Base Speed Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceVision			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Vision				EXPLANATION:Replaces the Darkvision Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceSkilled			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Skilled			EXPLANATION:Replaces the Skilled Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceAphoriteMagic		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Magic				EXPLANATION:Replaces the Aphorite Magic Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceCrystallineDust		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Crystalline Dust		EXPLANATION:Replaces the Crystalline Dust Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceAphoriteResistances	DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Resistances			EXPLANATION:Replaces the Aphorite Resistances Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceLanguages			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Languages			EXPLANATION:Replaces the Languages Racial Trait
+
+
+#===========
+#Duskwalker
+#===========
+
+FACTDEF:ABILITY|Duskwalker_ReplaceAbilityScores				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ability Scores			EXPLANATION:Replaces the Ability Scores
+FACTDEF:ABILITY|Duskwalker_ReplaceSize					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Size					EXPLANATION:Replaces the Medium Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceSpeed					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Speed				EXPLANATION:Replaces the Base Speed Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceVision					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Vision				EXPLANATION:Replaces the Darkvision Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceSkilled					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Skilled				EXPLANATION:Replaces the Skilled Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceGhostHunter				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ghost Hunter			EXPLANATION:Replaces the Ghost Hunter Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceWardAgainstCorruption		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ward Against Corruption	EXPLANATION:Replaces the Ward Against Corruption Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceLanguages				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Languages				EXPLANATION:Replaces the Languages Racial Trait
+
+#=====
+#Ganzi
+#=====
+
+FACTDEF:ABILITY|Ganzi_ReplaceAbilityScores				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Ability Scores			EXPLANATION:Replaces the Ability Scores
+FACTDEF:ABILITY|Ganzi_ReplaceSize						DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Size				EXPLANATION:Replaces the Medium Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceSpeed						DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Speed				EXPLANATION:Replaces the Base Speed Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceVision						DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Vision				EXPLANATION:Replaces the Darkvision Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceMaelstromResistance			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Maelstrom Resistance		EXPLANATION:Replaces the Maelstrom Resistance Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceSkilled					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Skilled				EXPLANATION:Replaces the Skilled Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceGanziOddity					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Ganzi Oddity			EXPLANATION:Replaces the Ganzi Oddity Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceLanguages					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Languages				EXPLANATION:Replaces the Languages Racial Trait
+
+
+
+
+
+
+# This file represents a conversion mechanism for items that were previously
+# stand-alone tokens, but are now handled internally as FACT or FACTSET.
+#
+# This file does not need to be referenced by a set of data or game mode
+# unless that data uses a data control file (DATACONTROL: in a PCC file)
+#
+# Once a dataset takes on the responsibility of a DATACONTROL file, then it
+# MUST include these entries (or something near equivalent [additional
+# SELECT-ability would be legal]) in one of the DATACONTROL files.
+
+# This MUST be included if you enable the datacontrol file....
+#
+#FACTDEF:RACE|BaseSize					DATAFORMAT:SIZEADJUSTMENT	REQUIRED:YES				VISIBLE:YES							EXPLANATION:All Races must have a Size - in the case of multiple sizes, use the SMALLEST allowed.
+
+#FACTDEF:ABILITY|AppliedName	DATAFORMAT:String		VISIBLE:YES
+#
+#FACTDEF:CLASS|Abb			DATAFORMAT:String		VISIBLE:YES
+#FACTDEF:CLASS|ClassType		DATAFORMAT:String		VISIBLE:YES
+#FACTDEF:CLASS|SpellType		DATAFORMAT:String		VISIBLE:YES	SELECTABLE:YES
+#
+#FACTDEF:DEITY|Symbol			DATAFORMAT:String		VISIBLE:YES
+#FACTDEF:DEITY|Worshippers		DATAFORMAT:String		VISIBLE:YES
+#FACTDEF:DEITY|Title			DATAFORMAT:String		VISIBLE:YES
+#FACTDEF:DEITY|Appearance		DATAFORMAT:String		VISIBLE:YES
+#
+#FACTDEF:EQUIPMENT|RateOfFire	DATAFORMAT:String		VISIBLE:YES
+#
+#FACTDEF:TEMPLATE|AppliedName	DATAFORMAT:String		VISIBLE:YES
+#
+#FACTSETDEF:DEITY|Pantheon		DATAFORMAT:String		VISIBLE:YES	SELECTABLE:YES
+#FACTSETDEF:DEITY|Race			DATAFORMAT:String		VISIBLE:YES
+#
+#
+## This is my attempt to implement the FACT system to replicate the deprecated PRETYPE to determine whether a given race is initially allowed traits
+#FACTDEF:RACE|IsPC				DATAFORMAT:BOOLEAN	VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines whether a race is a PC to begin with.
+#FACTDEF:RACE|IsCompanion		DATAFORMAT:BOOLEAN	VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines whether a race is a Companion to begin with.
+#
+#FACTDEF:RACE|Hands			DATAFORMAT:Number		VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines base race ~ Hands.
+#FACTDEF:RACE|Legs				DATAFORMAT:Number		VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines base race ~ Legs.
+#
+#FACTDEF:RACE|BaseMove_Walk		DATAFORMAT:Number		VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines base race ~ Movement Walk.
+#FACTDEF:RACE|BaseMove_Fly		DATAFORMAT:Number		VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines base race ~ Movement Fly.
+#FACTDEF:RACE|BaseMove_Climb		DATAFORMAT:Number		VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines base race ~ Movement Climb.
+#FACTDEF:RACE|BaseMove_Swim		DATAFORMAT:Number		VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines base race ~ Movement Swim.
+#FACTDEF:RACE|BaseMove_Burrow		DATAFORMAT:Number		VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines base race ~ Movement Burrow.
+#
+#FACTDEF:ABILITY|IsPC			DATAFORMAT:BOOLEAN	VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:IsPC		EXPLANATION:Determines whether a race is a PC to begin with.
+
+
+
+
+
+###Block: RACE "TYPE" replacement
+# Currently we use PRERACETYPE - A CLASS tag only - to allow a changed creature RACETYPE to still access their original racial HD class.
+# This transition aims to remove that reliance. Switching to a simple Boolean based upon the starting racetype "FACT"
+
+#FACTDEF:RACE|RACETYPE								DATAFORMAT:String	VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:RaceType							EXPLANATION:Determines what the 'RACE TYPE' is.
+
+###Block: Racial Traits
+#FACTDEF:ABILITY|Dwarf_ReplaceDefensiveTraining				DATAFORMAT:BOOLEAN	VISIBLE:YES	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:Racial Traits			EXPLANATION:removing racial traits
+
+###Block: Saves File
+#FACTDEF:CHECK|MainStat	DATAFORMAT:STRING			EXPLANATION:Output the Stat a save uses to the OS
+
+
+#############################
+#	Formula Parser
+############################
+
+
+# Subdomain / Domain Support
+
+#FACTDEF:DOMAIN|Domain						DATAFORMAT:STRING		VISIBLE:NO	SELECTABLE:NO	REQUIRED:NO	DISPLAYNAME:Domain	EXPLANATION:Makes referencing the domain easier

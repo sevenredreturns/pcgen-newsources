@@ -1,0 +1,57 @@
+# CVS $Revision$ $Author$ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+CAMPAIGN:Planar Adventures
+GAMEMODE:Pathfinder
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Pathfinder|Golarion
+TYPE:Paizo Publishing.Pathfinder Player Companion
+PUBNAMELONG:Paizo Inc.
+PUBNAMESHORT:Paizo
+PUBNAMEWEB:http://paizo.com
+SOURCELONG:Planar Adventures
+SOURCESHORT:PA
+SOURCEWEB:https://paizo.com/products/btpya1am
+SOURCEDATE:2018-06
+RANK:201806
+ISOGL:YES
+
+#Data Files
+
+#ABILITY:mpc_abilities.lst
+DATACONTROL:PA__datacontrols.lst
+ABILITYCATEGORY:PA_abilitycategories.lst
+ABILITY:PA_abilities_class.lst
+ABILITY:PA_abilities_race.lst
+ABILITY:PA_abilities_globalvar.lst
+#BIOSET:mpc_biosettings.lst
+#CLASS:mpc_classes.lst
+#COMPANIONMOD:mpc_companionmods.lst
+#DEITY:mpc_deities.lst
+#DOMAIN:mpc_domains.lst
+#EQUIPMENT:mpc_equip_arms_armor.lst
+#EQUIPMENT:mpc_equip_general.lst
+#EQUIPMOD:mpc_equipmods.lst
+#ABILITY:PA_feats.lst
+#KIT:mpc_kits.lst
+#LANGUAGE:mpc_languages.lst
+#ARMORPROF:mpc_profs_armor.lst
+#SHIELDPROF:mpc_profs_shield.lst
+#WEAPONPROF:mpc_profs_weapon.lst
+RACE:PA_races.lst
+#SKILL:mpc_skills.lst
+#SPELL:mpc_spells.lst
+#TEMPLATE:mpc_templates.lst
+
+
+### You can hide TYPEs in the GUI - TYPEs are handy for organization, but some are only used for internal functions.
+#HIDETYPE:EQUIP|SpecialSuppressor
+#HIDETYPE:SKILL|Science
+#HIDETYPE:FEAT|Leadership
+
+#Remove the '#' in front of those lines referring to files that you actually want to load
+#Remember to set the GAMEMODE to the one you really want.
+#Options in the Open Source data are 35e, Modern, Pathfinder, Darwins_World_2.
+
+#If you use this framework to set up a dataset of your own, then you may want to rename the folder and files to something
+#different. Otherwise if you ever should install a newer version of PCGen into your existing directory or needed to re-install
+#your existing installation of PCGen, your changes would get overwritten and thus be lost.

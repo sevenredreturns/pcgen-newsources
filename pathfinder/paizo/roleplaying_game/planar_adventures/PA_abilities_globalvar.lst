@@ -13,11 +13,12 @@
 ###Block: Grant Abilities
 # Ability Name						Define							Ability
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAbilityScores|0		ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Ability Scores|PREVAREQ:Aphorite_ReplaceAbilityScores,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceType|0				ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Type|PREVAREQ:Aphorite_ReplaceType,0
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSize|0				ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Size|PREVAREQ:Aphorite_ReplaceSize,0
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSpeed|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Speed|PREVAREQ:Aphorite_ReplaceSpeed,0
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceVision|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Vision|PREVAREQ:Aphorite_ReplaceVision,0
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSkilled|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Skilled|PREVAREQ:Aphorite_ReplaceSkilled,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAphoriteMagic|0		ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Aphorite Magic|PREVAREQ:Aphorite_ReplaceAphoriteMagic,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSpellLikeAbility|0		ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Spell-Like Ability|PREVAREQ:Aphorite_ReplaceSpellLikeAbility,0
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceCrystallineDust|0		ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Crystalline Dust|PREVAREQ:Aphorite_ReplaceCrystallineDust,0
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAphoriteResistances|0	ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Aphorite Resistances|PREVAREQ:Aphorite_ReplaceAphoriteResistances,0
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceLanguages|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Languages|PREVAREQ:Aphorite_ReplaceLanguages,0
@@ -26,7 +27,7 @@ CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceLanguages|
 ###Block: Remove Abilities
 # Ability Name						Modify VAR
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceReplaceSkilled|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoriteSkilled
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceAphoriteMagic|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoriteAphoriteMagic
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceSpellLikeAbility|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoriteSpellLikeAbility
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceCrystallineDust|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoriteCrystallineDust
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceAphoriteResistances|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoriteAphoriteResistances
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceSpeed|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.AphoriteSpeed
@@ -35,11 +36,12 @@ CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceLanguag
 
 
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceAbilityScores|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceAbilityScores=true
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceType|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceType=True
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceSize|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceSize=true
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceSpeed|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceSpeed=True
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceVision|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceVision=True
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceSkilled|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceSkilled=True
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceAphoriteMagic|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceAphoriteMagic=True
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceSpellLikeAbility|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceSpellLikeAbility=True
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceCrystallineDust|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceCrystallineDust=True
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceAphoriteResistances|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceAphoriteResistances=True
 CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceLanguages|1|TYPE=Boolean|PREFACT:1,ABILITIES,Aphorite_ReplaceLanguages=true
@@ -52,6 +54,7 @@ CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceLanguag
 ###Block: Grant Abilities
 # Ability Name							Define								Ability
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceAbilityScores|0			ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Ability Scores|PREVAREQ:Duskwalker_ReplaceAbilityScores,0
+CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceType|0				ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Type|PREVAREQ:Duskwalker_ReplaceType,0
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceSize|0				ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Size|PREVAREQ:Duskwalker_ReplaceSize,0
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceSpeed|0				ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Speed|PREVAREQ:Duskwalker_ReplaceSpeed,0
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceVision|0				ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Vision|PREVAREQ:Duskwalker_ReplaceVision,0
@@ -71,6 +74,7 @@ CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceLan
 
 
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceAbilityScores|1|TYPE=Boolean|PREFACT:1,ABILITIES,Duskwalker_ReplaceAbilityScores=true
+CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceType|1|TYPE=Boolean|PREFACT:1,ABILITIES,Duskwalker_ReplaceType=True
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceSize|1|TYPE=Boolean|PREFACT:1,ABILITIES,Duskwalker_ReplaceSize=true
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceSpeed|1|TYPE=Boolean|PREFACT:1,ABILITIES,Duskwalker_ReplaceSpeed=true
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceVision|1|TYPE=Boolean|PREFACT:1,ABILITIES,Duskwalker_ReplaceVision=true
@@ -88,6 +92,7 @@ CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceLan
 ###Block: Grant Abilities
 # Ability Name						Define						Ability
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	DEFINE:Ganzi_ReplaceAbilityScores|0		ABILITY:Ganzi Racial Trait|AUTOMATIC|Ganzi ~ Ability Scores|PREVAREQ:Ganzi_ReplaceAbilityScores,0
+CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	DEFINE:Ganzi_ReplaceType|0			ABILITY:Ganzi Racial Trait|AUTOMATIC|Ganzi ~ Type|PREVAREQ:Ganzi_ReplaceType,0
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	DEFINE:Ganzi_ReplaceSize|0			ABILITY:Ganzi Racial Trait|AUTOMATIC|Ganzi ~ Size|PREVAREQ:Ganzi_ReplaceSize,0
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	DEFINE:Ganzi_ReplaceSpeed|0			ABILITY:Ganzi Racial Trait|AUTOMATIC|Ganzi ~ Speed|PREVAREQ:Ganzi_ReplaceSpeed,0
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	DEFINE:Ganzi_ReplaceVision|0			ABILITY:Ganzi Racial Trait|AUTOMATIC|Ganzi ~ Vision|PREVAREQ:Ganzi_ReplaceVision,0
@@ -108,6 +113,7 @@ CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	BONUS:VAR|Ganzi_ReplaceLanguages|1|T
 
 
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	BONUS:VAR|Ganzi_ReplaceAbilityScores|1|TYPE=Boolean|PREFACT:1,ABILITIES,Ganzi_ReplaceAbilityScores=true
+CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	BONUS:VAR|Ganzi_ReplaceType|1|TYPE=Boolean|PREFACT:1,ABILITIES,Ganzi_ReplaceType=True
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	BONUS:VAR|Ganzi_ReplaceSize|1|TYPE=Boolean|PREFACT:1,ABILITIES,Ganzi_ReplaceSize=true
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	BONUS:VAR|Ganzi_ReplaceSpeed|1|TYPE=Boolean|PREFACT:1,ABILITIES,Ganzi_ReplaceSpeed=true
 CATEGORY=Internal|Racial Traits ~ Ganzi.MOD	BONUS:VAR|Ganzi_ReplaceVision|1|TYPE=Boolean|PREFACT:1,ABILITIES,Ganzi_ReplaceVision=true

@@ -9,13 +9,12 @@
 
 # Name									Dataformat			Required	Selectable		Visible	Displayname									Explanation
 FACTDEF:ABILITY|Aphorite_ReplaceAbilityScores			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Ability Scores			EXPLANATION:Replaces the Ability Scores
-#add ReplaceType (for all races)
+FACTDEF:ABILITY|Aphorite_ReplaceType				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Type					EXPLANATION:Replaces the Native Outsider Racial Trait
 FACTDEF:ABILITY|Aphorite_ReplaceSize				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Size					EXPLANATION:Replaces the Medium Racial Trait
 FACTDEF:ABILITY|Aphorite_ReplaceSpeed				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Speed					EXPLANATION:Replaces the Base Speed Racial Trait
 FACTDEF:ABILITY|Aphorite_ReplaceVision				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Vision					EXPLANATION:Replaces the Darkvision Racial Trait
 FACTDEF:ABILITY|Aphorite_ReplaceSkilled				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Skilled				EXPLANATION:Replaces the Skilled Racial Trait
-#fix "Aphorite Magic" to Aphorite_ReplaceSpellLikeAbility and dependencies
-FACTDEF:ABILITY|Aphorite_ReplaceAphoriteMagic			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Magic					EXPLANATION:Replaces the Aphorite Magic Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceSpellLikeAbility		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Spell-Like Ability				EXPLANATION:Replaces the Aphorite Spell-Like Ability Trait
 FACTDEF:ABILITY|Aphorite_ReplaceCrystallineDust			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Crystalline Dust			EXPLANATION:Replaces the Crystalline Dust Racial Trait
 FACTDEF:ABILITY|Aphorite_ReplaceAphoriteResistances		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Resistances				EXPLANATION:Replaces the Aphorite Resistances Racial Trait
 FACTDEF:ABILITY|Aphorite_ReplaceLanguages				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Languages				EXPLANATION:Replaces the Languages Racial Trait
@@ -26,6 +25,7 @@ FACTDEF:ABILITY|Aphorite_ReplaceLanguages				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELE
 #===========
 
 FACTDEF:ABILITY|Duskwalker_ReplaceAbilityScores			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ability Scores			EXPLANATION:Replaces the Ability Scores
+FACTDEF:ABILITY|Duskwalker_ReplaceType				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Type					EXPLANATION:Replaces the Native Outsider Racial Trait
 FACTDEF:ABILITY|Duskwalker_ReplaceSize				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Size					EXPLANATION:Replaces the Medium Racial Trait
 FACTDEF:ABILITY|Duskwalker_ReplaceSpeed				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Speed				EXPLANATION:Replaces the Base Speed Racial Trait
 FACTDEF:ABILITY|Duskwalker_ReplaceVision				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Vision				EXPLANATION:Replaces the Darkvision Racial Trait
@@ -39,6 +39,7 @@ FACTDEF:ABILITY|Duskwalker_ReplaceLanguages			DATAFORMAT:BOOLEAN	REQUIRED:NO	SEL
 #=====
 
 FACTDEF:ABILITY|Ganzi_ReplaceAbilityScores			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Ability Scores				EXPLANATION:Replaces the Ability Scores
+FACTDEF:ABILITY|Ganzi_ReplaceType					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Type					EXPLANATION:Replaces the Native Outsider Racial Trait
 FACTDEF:ABILITY|Ganzi_ReplaceSize					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Size					EXPLANATION:Replaces the Medium Racial Trait
 FACTDEF:ABILITY|Ganzi_ReplaceSpeed					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Speed					EXPLANATION:Replaces the Base Speed Racial Trait
 FACTDEF:ABILITY|Ganzi_ReplaceVision					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Vision					EXPLANATION:Replaces the Darkvision Racial Trait

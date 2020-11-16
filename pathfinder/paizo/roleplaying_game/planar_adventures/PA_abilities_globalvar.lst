@@ -1,4 +1,4 @@
-#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+# Tue Oct  6 11:09:31 2020 -- reformated by PCGen PrettyLST v6.08.00
 # CVS $Revision: $ $Author: $ -- Fri Jun 17 21:51:56 2016 -- reformated by PCGen PrettyLST v6.06.00
 
 ###--------------------------------------------###
@@ -11,16 +11,16 @@
 # ------------------------------
 
 ###Block: Grant Abilities
-# Ability Name						Define						Ability
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAbilityScores|0				ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Ability Scores|PREVAREQ:Aphorite_ReplaceAbilityScores,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSize|0						ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Size|PREVAREQ:Aphorite_ReplaceSize,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSpeed|0					ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Speed|PREVAREQ:Aphorite_ReplaceSpeed,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceVision|0					ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Vision|PREVAREQ:Aphorite_ReplaceVision,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSkilled|0					ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Skilled|PREVAREQ:Aphorite_ReplaceSkilled,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAphoriteMagic|0				ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Aphorite Magic|PREVAREQ:Aphorite_ReplaceAphoriteMagic,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceCrystallineDust|0				ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Crystalline Dust|PREVAREQ:Aphorite_ReplaceCrystallineDust,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAphoriteResistances|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Aphorite Resistances|PREVAREQ:Aphorite_ReplaceAphoriteResistances,0
-CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceLanguages|0					ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Languages|PREVAREQ:Aphorite_ReplaceLanguages,0
+# Ability Name						Define							Ability
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAbilityScores|0		ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Ability Scores|PREVAREQ:Aphorite_ReplaceAbilityScores,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSize|0				ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Size|PREVAREQ:Aphorite_ReplaceSize,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSpeed|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Speed|PREVAREQ:Aphorite_ReplaceSpeed,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceVision|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Vision|PREVAREQ:Aphorite_ReplaceVision,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceSkilled|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Skilled|PREVAREQ:Aphorite_ReplaceSkilled,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAphoriteMagic|0		ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Aphorite Magic|PREVAREQ:Aphorite_ReplaceAphoriteMagic,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceCrystallineDust|0		ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Crystalline Dust|PREVAREQ:Aphorite_ReplaceCrystallineDust,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceAphoriteResistances|0	ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Aphorite Resistances|PREVAREQ:Aphorite_ReplaceAphoriteResistances,0
+CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	DEFINE:Aphorite_ReplaceLanguages|0			ABILITY:Aphorite Racial Trait|AUTOMATIC|Aphorite ~ Languages|PREVAREQ:Aphorite_ReplaceLanguages,0
 
 
 ###Block: Remove Abilities
@@ -50,7 +50,7 @@ CATEGORY=Internal|Racial Traits ~ Aphorite.MOD	BONUS:VAR|Aphorite_ReplaceLanguag
 # ------------------------------
 
 ###Block: Grant Abilities
-# Ability Name					Define						Ability
+# Ability Name							Define								Ability
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceAbilityScores|0			ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Ability Scores|PREVAREQ:Duskwalker_ReplaceAbilityScores,0
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceSize|0				ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Size|PREVAREQ:Duskwalker_ReplaceSize,0
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceSpeed|0				ABILITY:Duskwalker Racial Trait|AUTOMATIC|Duskwalker ~ Speed|PREVAREQ:Duskwalker_ReplaceSpeed,0
@@ -62,7 +62,7 @@ CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	DEFINE:Duskwalker_ReplaceLangua
 
 
 ###Block: Remove Abilities
-# Ability Name					Modify VAR
+# Ability Name							Modify VAR
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceVision|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.DuskwalkerRacialVision
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceSkilled|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.DuskwalkerSkilled
 CATEGORY=Internal|Racial Traits ~ Duskwalker.MOD	BONUS:VAR|Duskwalker_ReplaceGhostHunter|1|TYPE=Boolean|PREABILITY:1,CATEGORY=Special Ability,TYPE.DuskwalkerGhostHunter

@@ -1,4 +1,4 @@
-# CVS $Revision$ $Author$ -- Thu Feb 22 13:04:59 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+# Tue Oct  6 11:09:31 2020 -- reformated by PCGen PrettyLST v6.08.00
 #SOURCELONG:Planar Adventures	SOURCESHORT:PA	SOURCEWEB:https://paizo.com/products/btpya1am	SOURCEDATE:2018-06
 #insert your data here
 
@@ -7,8 +7,9 @@
 
 
 #Ranger Archtype
-ABILITYCATEGORY:Planar Scout Favored Plane	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:PlanarScoutPlane											DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Planar Bond Bonus			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Planar Bond Bonus			PLURAL:Planar Bond Bonuses				DISPLAYLOCATION:Class Features
+# Ability Category					Visible		Editable?		Change Pool?	Fractional values?	Category of Object		Type of Object							Plural description for UI			Display Location
+ABILITYCATEGORY:Planar Scout Favored Plane	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:PlanarScoutPlane													DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Planar Bond Bonus			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Planar Bond Bonus						PLURAL:Planar Bond Bonuses			DISPLAYLOCATION:Class Features
 
 
 #Racial Abilities
@@ -16,23 +17,23 @@ ABILITYCATEGORY:Planar Bond Bonus			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FR
 #=======
 #Aphorite
 #=======
-ABILITYCATEGORY:Aphorite Racial Trait		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Aphorite Racial Trait.AphoriteRacialTrait		PLURAL:Aphorite Racial Traits				DISPLAYLOCATION:Racial Abilities
-ABILITYCATEGORY:Aphorite Skilled Craft Bonus	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Internal			TYPE:Aphorite Skilled Craft Bonus				PLURAL:Aphorite Skilled Craft Bonuses		DISPLAYLOCATION:Racial Abilities
-ABILITYCATEGORY:Aphorite Language			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:AphoriteLanguageTrait					PLURAL:Aphorite Languages				DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Aphorite Racial Trait		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Aphorite Racial Trait.AphoriteRacialTrait		PLURAL:Aphorite Racial Traits			DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Aphorite Skilled Craft Bonus	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Internal			TYPE:Aphorite Skilled Craft Bonus				PLURAL:Aphorite Skilled Craft Bonuses	DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Aphorite Language			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:AphoriteLanguageTrait					PLURAL:Aphorite Languages			DISPLAYLOCATION:Racial Abilities
 
 #==========
 #Duskwalker
 #==========
-ABILITYCATEGORY:Duskwalker Racial Trait		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Duskwalker Racial Trait.DuskwalkerRacialTrait	PLURAL:Duskwalker Racial Traits			DISPLAYLOCATION:Racial Abilities
-ABILITYCATEGORY:Duskwalker Language			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:DuskwalkerLanguageTrait					PLURAL:Duskwalker Languages				DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Duskwalker Racial Trait		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Duskwalker Racial Trait.DuskwalkerRacialTrait	PLURAL:Duskwalker Racial Traits		DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Duskwalker Language			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:DuskwalkerLanguageTrait					PLURAL:Duskwalker Languages			DISPLAYLOCATION:Racial Abilities
 
 
 #=====
 #Ganzi
 #=====
-ABILITYCATEGORY:Ganzi Racial Trait			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Ganzi Racial Trait.GanziRacialTrait			PLURAL:Ganzi Racial Traits				DISPLAYLOCATION:Racial Abilities
-ABILITYCATEGORY:Ganzi Oddity Bonus			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Ganzi Oddity Bonus						PLURAL:Ganzi Oddity Bonuses				DISPLAYLOCATION:Racial Abilities
-ABILITYCATEGORY:Ganzi Language			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:GanziLanguageTrait						PLURAL:Ganzi Languages					DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Ganzi Racial Trait			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Ganzi Racial Trait.GanziRacialTrait			PLURAL:Ganzi Racial Traits			DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Ganzi Oddity Bonus			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:Ganzi Oddity Bonus						PLURAL:Ganzi Oddity Bonuses			DISPLAYLOCATION:Racial Abilities
+ABILITYCATEGORY:Ganzi Language			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:GanziLanguageTrait						PLURAL:Ganzi Languages				DISPLAYLOCATION:Racial Abilities
 
 
 

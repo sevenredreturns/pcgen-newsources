@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+# Tue Oct  6 11:09:31 2020 -- reformated by PCGen PrettyLST v6.08.00
 # Created January, 2015 Tom Parker
 
 ###Block: Racial Traits
@@ -7,42 +7,45 @@
 #Aphorite
 #=======
 
-FACTDEF:ABILITY|Aphorite_ReplaceAbilityScores		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Ability Scores		EXPLANATION:Replaces the Ability Scores
-FACTDEF:ABILITY|Aphorite_ReplaceSize			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Size				EXPLANATION:Replaces the Medium Racial Trait
-FACTDEF:ABILITY|Aphorite_ReplaceSpeed			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Speed				EXPLANATION:Replaces the Base Speed Racial Trait
-FACTDEF:ABILITY|Aphorite_ReplaceVision			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Vision				EXPLANATION:Replaces the Darkvision Racial Trait
-FACTDEF:ABILITY|Aphorite_ReplaceSkilled			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Skilled			EXPLANATION:Replaces the Skilled Racial Trait
-FACTDEF:ABILITY|Aphorite_ReplaceAphoriteMagic		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Magic				EXPLANATION:Replaces the Aphorite Magic Racial Trait
-FACTDEF:ABILITY|Aphorite_ReplaceCrystallineDust		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Crystalline Dust		EXPLANATION:Replaces the Crystalline Dust Racial Trait
-FACTDEF:ABILITY|Aphorite_ReplaceAphoriteResistances	DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Resistances			EXPLANATION:Replaces the Aphorite Resistances Racial Trait
-FACTDEF:ABILITY|Aphorite_ReplaceLanguages			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Languages			EXPLANATION:Replaces the Languages Racial Trait
+# Name									Dataformat			Required	Selectable		Visible	Displayname									Explanation
+FACTDEF:ABILITY|Aphorite_ReplaceAbilityScores			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Ability Scores			EXPLANATION:Replaces the Ability Scores
+#add ReplaceType (for all races)
+FACTDEF:ABILITY|Aphorite_ReplaceSize				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Size					EXPLANATION:Replaces the Medium Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceSpeed				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Speed					EXPLANATION:Replaces the Base Speed Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceVision				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Vision					EXPLANATION:Replaces the Darkvision Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceSkilled				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Skilled				EXPLANATION:Replaces the Skilled Racial Trait
+#fix "Aphorite Magic" to Aphorite_ReplaceSpellLikeAbility and dependencies
+FACTDEF:ABILITY|Aphorite_ReplaceAphoriteMagic			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Magic					EXPLANATION:Replaces the Aphorite Magic Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceCrystallineDust			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Crystalline Dust			EXPLANATION:Replaces the Crystalline Dust Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceAphoriteResistances		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Resistances				EXPLANATION:Replaces the Aphorite Resistances Racial Trait
+FACTDEF:ABILITY|Aphorite_ReplaceLanguages				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Aphorite Languages				EXPLANATION:Replaces the Languages Racial Trait
 
 
 #===========
 #Duskwalker
 #===========
 
-FACTDEF:ABILITY|Duskwalker_ReplaceAbilityScores				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ability Scores			EXPLANATION:Replaces the Ability Scores
-FACTDEF:ABILITY|Duskwalker_ReplaceSize					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Size					EXPLANATION:Replaces the Medium Racial Trait
-FACTDEF:ABILITY|Duskwalker_ReplaceSpeed					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Speed				EXPLANATION:Replaces the Base Speed Racial Trait
-FACTDEF:ABILITY|Duskwalker_ReplaceVision					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Vision				EXPLANATION:Replaces the Darkvision Racial Trait
-FACTDEF:ABILITY|Duskwalker_ReplaceSkilled					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Skilled				EXPLANATION:Replaces the Skilled Racial Trait
-FACTDEF:ABILITY|Duskwalker_ReplaceGhostHunter				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ghost Hunter			EXPLANATION:Replaces the Ghost Hunter Racial Trait
-FACTDEF:ABILITY|Duskwalker_ReplaceWardAgainstCorruption		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ward Against Corruption	EXPLANATION:Replaces the Ward Against Corruption Racial Trait
-FACTDEF:ABILITY|Duskwalker_ReplaceLanguages				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Languages				EXPLANATION:Replaces the Languages Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceAbilityScores			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ability Scores			EXPLANATION:Replaces the Ability Scores
+FACTDEF:ABILITY|Duskwalker_ReplaceSize				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Size					EXPLANATION:Replaces the Medium Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceSpeed				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Speed				EXPLANATION:Replaces the Base Speed Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceVision				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Vision				EXPLANATION:Replaces the Darkvision Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceSkilled				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Skilled				EXPLANATION:Replaces the Skilled Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceGhostHunter			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ghost Hunter			EXPLANATION:Replaces the Ghost Hunter Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceWardAgainstCorruption	DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Ward Against Corruption	EXPLANATION:Replaces the Ward Against Corruption Racial Trait
+FACTDEF:ABILITY|Duskwalker_ReplaceLanguages			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Duskwalker Languages				EXPLANATION:Replaces the Languages Racial Trait
 
 #=====
 #Ganzi
 #=====
 
-FACTDEF:ABILITY|Ganzi_ReplaceAbilityScores				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Ability Scores			EXPLANATION:Replaces the Ability Scores
-FACTDEF:ABILITY|Ganzi_ReplaceSize						DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Size				EXPLANATION:Replaces the Medium Racial Trait
-FACTDEF:ABILITY|Ganzi_ReplaceSpeed						DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Speed				EXPLANATION:Replaces the Base Speed Racial Trait
-FACTDEF:ABILITY|Ganzi_ReplaceVision						DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Vision				EXPLANATION:Replaces the Darkvision Racial Trait
-FACTDEF:ABILITY|Ganzi_ReplaceMaelstromResistance			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Maelstrom Resistance		EXPLANATION:Replaces the Maelstrom Resistance Racial Trait
-FACTDEF:ABILITY|Ganzi_ReplaceSkilled					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Skilled				EXPLANATION:Replaces the Skilled Racial Trait
-FACTDEF:ABILITY|Ganzi_ReplaceGanziOddity					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Ganzi Oddity			EXPLANATION:Replaces the Ganzi Oddity Racial Trait
-FACTDEF:ABILITY|Ganzi_ReplaceLanguages					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Languages				EXPLANATION:Replaces the Languages Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceAbilityScores			DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Ability Scores				EXPLANATION:Replaces the Ability Scores
+FACTDEF:ABILITY|Ganzi_ReplaceSize					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Size					EXPLANATION:Replaces the Medium Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceSpeed					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Speed					EXPLANATION:Replaces the Base Speed Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceVision					DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Vision					EXPLANATION:Replaces the Darkvision Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceMaelstromResistance		DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Maelstrom Resistance			EXPLANATION:Replaces the Maelstrom Resistance Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceSkilled				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Skilled					EXPLANATION:Replaces the Skilled Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceGanziOddity				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Ganzi Oddity				EXPLANATION:Replaces the Ganzi Oddity Racial Trait
+FACTDEF:ABILITY|Ganzi_ReplaceLanguages				DATAFORMAT:BOOLEAN	REQUIRED:NO	SELECTABLE:NO	VISIBLE:YES	DISPLAYNAME:Replace Ganzi Languages					EXPLANATION:Replaces the Languages Racial Trait
 
 
 

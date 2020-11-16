@@ -1,13 +1,14 @@
-# CVS $Revision$ $Author$ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+# Tue Oct  6 11:09:31 2020 -- reformated by PCGen PrettyLST v6.08.00
 SOURCELONG:Planar Adventures	SOURCESHORT:PA	SOURCEWEB:https://paizo.com/products/btpya1am	SOURCEDATE:2018-06
 
 
 
 #insert your data here
 
-Aphorite	STARTFEATS:1	FACT:BaseSize|M	SIZE:M	MOVE:Walk,30	REACH:5	LEGS:2	HANDS:2	ABILITY:Internal|AUTOMATIC|Racial Traits ~ Aphorite		RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	SOURCEPAGE:224	FACT:BaseSize|M
-Duskwalker	STARTFEATS:1	FACT:BaseSize|M	SIZE:M	MOVE:Walk,30	REACH:5	LEGS:2	HANDS:2	ABILITY:Internal|AUTOMATIC|Racial Traits ~ Duskwalker		RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	SOURCEPAGE:231	FACT:BaseSize|M
-Ganzi		STARTFEATS:1	FACT:BaseSize|M	SIZE:M	MOVE:Walk,30	REACH:5	LEGS:2	HANDS:2	ABILITY:Internal|AUTOMATIC|Racial Traits ~ Ganzi		RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	SOURCEPAGE:224	FACT:BaseSize|M
+# Race Name	Starting Feats	Base size					Size		Move			Reach		Ability								Nb Legs	Nb Hands	Main Race Type	Race Subtype		Type			Source Page
+Aphorite	STARTFEATS:1	FACT:BaseSize|M	FACT:BaseSize|M	SIZE:M	MOVE:Walk,30	REACH:5	ABILITY:Internal|AUTOMATIC|Racial Traits ~ Aphorite	LEGS:2	HANDS:2	RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	SOURCEPAGE:224
+Duskwalker	STARTFEATS:1	FACT:BaseSize|M	FACT:BaseSize|M	SIZE:M	MOVE:Walk,30	REACH:5	ABILITY:Internal|AUTOMATIC|Racial Traits ~ Duskwalker	LEGS:2	HANDS:2	RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	SOURCEPAGE:231
+Ganzi		STARTFEATS:1	FACT:BaseSize|M	FACT:BaseSize|M	SIZE:M	MOVE:Walk,30	REACH:5	ABILITY:Internal|AUTOMATIC|Racial Traits ~ Ganzi	LEGS:2	HANDS:2	RACETYPE:Outsider	RACESUBTYPE:Native	TYPE:Outsider.PC	SOURCEPAGE:224
 
 
 

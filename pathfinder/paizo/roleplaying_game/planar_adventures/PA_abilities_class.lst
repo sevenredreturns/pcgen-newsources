@@ -8,12 +8,12 @@ SOURCELONG:Planar Adventures	SOURCESHORT:PA	SOURCEWEB:https://paizo.com/products
 
 #Ranger Archetype
 # Ability Name								Unique Key						Category of Ability		Type																	Required Class		Multiple Requirements																																																Description																																																																		Ability																																																																						Bonus Ability Pool				Class Skill																													Cost		Source Page		Aspects																			FACT
-Planar Scout								KEY:Ranger Archetype ~ Planar Scout		CATEGORY:Archetype		TYPE:Archetype.RangerArchetype												PRECLASS:1,Ranger=1	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ Planar Scout],[!PREFACT:1,ABILITIES,Ranger_Archetype_ClassSkills=True,Ranger_Archetype_WildEmpathy=True,Ranger_Archetype_FavoredTerrain=True,Ranger_Archetype_HuntersBond=True,Ranger_Archetype_Evasion=True,Ranger_Archetype_ImprovedEvasion=True]	DESC:Planar scouts are rangers specializing in traversing the planes—and surviving their journeys.																																																			ABILITY:Internal|AUTOMATIC|Planar Scout ~ Class Skills|PRECLASS:1,Ranger=1	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Empathy|PRECLASS:1,Ranger=1	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Terrains|PRECLASS:1,Ranger=3	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Bond|PRECLASS:1,Ranger=4	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Adaptation|PRECLASS:1,Ranger=9																																						COST:0	SOURCEPAGE:p.17																					FACT:Ranger_Archetype_ClassSkills|true	FACT:Ranger_Archetype_WildEmpathy|true	FACT:Ranger_Archetype_FavoredTerrain|true	FACT:Ranger_Archetype_HuntersBond|true	FACT:Ranger_Archetype_Evasion|true	FACT:Ranger_Archetype_ImprovedEvasion|true	FACT:Ranger_CF_ClassSkills|true	FACT:Ranger_CF_WildEmpathy|true	FACT:Ranger_CF_HuntersBond|true	FACT:Ranger_CF_Evasion|true	FACT:Ranger_CF_ImprovedEvasion|true
+Planar Scout								KEY:Ranger Archetype ~ Planar Scout		CATEGORY:Archetype		TYPE:Archetype.RangerArchetype												PRECLASS:1,Ranger=1	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ Planar Scout],[!PREFACT:1,ABILITIES,Ranger_Archetype_ClassSkills=True,Ranger_Archetype_WildEmpathy=True,Ranger_Archetype_FavoredTerrain=True,Ranger_Archetype_HuntersBond=True,Ranger_Archetype_Evasion=True,Ranger_Archetype_ImprovedEvasion=True]	DESC:Planar scouts are rangers specializing in traversing the planes—and surviving their journeys.																																																			ABILITY:Internal|AUTOMATIC|Planar Scout ~ Class Skills|PRECLASS:1,Ranger=1	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Empathy|PRECLASS:1,Ranger=1	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Terrains|PRECLASS:1,Ranger=3	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Bond|PRECLASS:1,Ranger=4	ABILITY:Special Ability|AUTOMATIC|Planar Scout ~ Planar Adaptation|PRECLASS:1,Ranger=9																																						COST:0	SOURCEPAGE:p.17																					FACT:Ranger_Archetype_ClassSkills|true	FACT:Ranger_Archetype_WildEmpathy|true	FACT:Ranger_Archetype_FavoredTerrain|true		FACT:Ranger_Archetype_HuntersBond|true	FACT:Ranger_Archetype_Evasion|true		FACT:Ranger_Archetype_ImprovedEvasion|true	FACT:Ranger_CF_ClassSkills|true	FACT:Ranger_CF_WildEmpathy|true	FACT:Ranger_CF_FavoredTerrain|true		FACT:Ranger_CF_HuntersBond|true	FACT:Ranger_CF_Evasion|true	FACT:Ranger_CF_ImprovedEvasion|true
 
 #Ranger Abilities
 Class Skills								KEY:Planar Scout ~ Class Skills		CATEGORY:Internal			TYPE:Ranger Class Features.PlanarScoutClassFeatures																																																																																																																																																																																																																	CSKILL:Climb|TYPE=Craft|Handle Animal|Heal|Intimidate|Knowledge (Geography)|Knowledge (Planes)|Knowledge (Nature)|Perception|TYPE=Profession|Ride|Spellcraft|Stealth|Survival|Swim			SOURCEPAGE:p.17
 Planar Empathy								KEY:Planar Scout ~ Planar Empathy		CATEGORY:Special Ability	TYPE:Ranger Class Features.PlanarScoutClassFeatures.SpecialQuality.Extraordinary																																																											DESC:A planar scout can use wild empathy only on animals with the extraplanar subtype. He can use this ability to influence outsiders with an Intelligence score of 1 or 2, but he takes a –4 penalty on the check. This alters wild empathy.																																																																																																																																										SOURCEPAGE:p.17
-#Planar Terrains								KEY:Planar Scout ~ Planar Terrains		CATEGORY:Special Ability	TYPE:Ranger Class Features.PlanarScoutClassFeatures.SpecialQuality.Extraordinary																																																											DESC:At 3rd level, a planar scout gains a planar terrain. Planar terrains function in all ways like a ranger’s favored terrain; he must select a new plane each time he gains a favored terrain. This alters favored terrain.																																																																																																																																													SOURCEPAGE:p.17
+#Planar Terrains								KEY:Planar Scout ~ Planar Terrains		CATEGORY:Special Ability	TYPE:Ranger Class Features.PlanarScoutClassFeatures.SpecialQuality.Extraordinary																																	DESC:At 3rd level, a planar scout gains a planar terrain (see the sidebar on page 9). Planar terrains function in all ways like a ranger’s favored terrain; he must select a new plane each time he gains a favored terrain. This alters favored terrain.																																																																																																												ABILITY:Special Ability|AUTOMATIC|Basic Planar Terrains																		BONUS:VAR|PlanarScoutPlanarTerrainLVL|RangerLVL																				SOURCEPAGE:p.17
 Planar Bond									KEY:Planar Scout ~ Planar Bond		CATEGORY:Special Ability	TYPE:Ranger Class Features.PlanarScoutClassFeatures.SpecialQuality.Supernatural																																																											DESC:At 4th level, rather than forge a bond with an animal or his allies, a planar scout forms a bond with a specific plane. The planar scout becomes infused with the essence of his plane of choice, taking on physical characteristics of denizens native to his chosen plane as well as the abilities listed below.																																																																																							BONUS:ABILITYPOOL|Planar Bond Bonus|1																																	SOURCEPAGE:p.17
 Planar Adaptation								KEY:Planar Scout ~ Planar Adaptation	CATEGORY:Special Ability	TYPE:Ranger Class Features.PlanarScoutClassFeatures.SpecialQuality.Supernatural																																																											DESC:At 9th level a planar scout gains planar adaptation when on his bonded plane. At 16th level he confers this protection to all allies within a 30-foot spread.																																																																																																																																																						SOURCEPAGE:p.17
 
@@ -39,7 +39,42 @@ CATEGORY=Special Ability|Planar Scout ~ Planar Bond.MOD																									
 CATEGORY=Special Ability|Planar Scout ~ Planar Bond.MOD																																																																																																																																																																																																																																																																									ASPECT:NAME|Planar Bond (Plane of Fire)|PREABILITY:1,CATEGORY=Special Ability,Planar Scout ~ Plane of Fire
 CATEGORY=Special Ability|Planar Scout ~ Planar Bond.MOD																																																																																																																																																																																																																																																																									ASPECT:NAME|Planar Bond (Plane of Shadow)|PREABILITY:1,CATEGORY=Special Ability,Planar Scout ~ Plane of Shadow
 CATEGORY=Special Ability|Planar Scout ~ Planar Bond.MOD																																																																																																																																																																																																																																																																									ASPECT:NAME|Planar Bond (Plane of Water)|PREABILITY:1,CATEGORY=Special Ability,Planar Scout ~ Plane of Water
-CATEGORY=Special Ability|Ranger ~ Favored Terrain.MOD																																																																																																																																																																																																																																																																										ASPECT:NAME|Planar Terrain|PRECLASS:1,Planar Scout=1
+
+#Planar Terrains abilitiy
+#Planar Terrains								KEY:Planar Scout ~ Planar Terrains		CATEGORY:Special Ability	TYPE:Ranger Class Features.PlanarScoutClassFeatures.SpecialQuality.Extraordinary							VISIBLE:NO	DEFINE:RangerFavoredTerrainLVL|0													ABILITY:Special Ability|AUTOMATIC|Common Favored Terrain	ABILITY:Special Ability|AUTOMATIC|Basic Favored Terrain																						BONUS:VAR|FavoredTerrainPool|(RangerFavoredTerrainLVL+2)/5	BONUS:VAR|RangerFavoredTerrainLVL|RangerLVL
+
+
+
+#Block Planar Terrains
+#Ethereal Plane								KEY:Planar Terrains ~ Ethereal Plane	CATEGORY:Special Ability	TYPE:Ranger Class Features.PlanarScoutClassFeatures.Planar Terrains.SpecialQuality.Extraordinary																																																								DESC:You gain a +%1 bonus on Knowledge (Geography), Perception, Stealth, and Survival checks, Initiative checks and cannot be tracked on the Ethereal Plane|PlanarTerrainsEtherealPlane	DESC:You gain a +%1 bonus on Knowledge (Geography), Perception, Stealth, and Survival checks when using these skills on the Ethereal Plane. Likewise, you get a +%1 bonus on initiative checks when on this plane. If you desire, you leave no trail on this plane and cannot be tracked.|PlanarTerrainsEtherealPlane
+#First World
+#Shadow Plane
+#Negative Energy Plane
+#Positive Energy Plane
+#Plane of Air
+#Plane of Earth
+#Plane of Fire
+#Plane of Water
+#Astral Plane
+#Heaven
+#Nirvana
+#Elysium
+#Axis
+#Boneyard
+#Maelstrom
+#Hell
+#Abaddon
+#Abyss
+#Akashic Record
+#Cynosure
+#Dead Vault
+#Dreamlands
+#Dimension of Time
+#Hao Jin Tapestry
+#Harrowed Realm
+#Jandelay
+#Leng
+#Xibalba
 
 
 

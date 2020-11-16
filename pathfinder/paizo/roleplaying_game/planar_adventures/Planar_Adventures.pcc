@@ -4,6 +4,8 @@ GAMEMODE:Pathfinder
 GENRE:Fantasy
 BOOKTYPE:Supplement
 SETTING:Pathfinder|Golarion
+PRECAMPAIGN:6,INCLUDESBOOKTYPE=Core Rules,INCLUDES=Advanced Player's Guide,INCLUDES=Ultimate Magic,INCLUDES=Ultimate Combat,INCLUDES=Advanced Class Guide,INCLUDES=Bestiary
+PRECAMPAIGN:3,INCLUDES=Advanced Race Guide,INCLUDES=Occult Adventures,INCLUDES=Pathfinder Unchained
 TYPE:Paizo Publishing.Pathfinder Player Companion
 PUBNAMELONG:Paizo Inc.
 PUBNAMESHORT:Paizo

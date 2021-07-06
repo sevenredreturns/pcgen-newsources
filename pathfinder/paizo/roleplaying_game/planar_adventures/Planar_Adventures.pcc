@@ -17,6 +17,20 @@ SOURCEDATE:2018-06
 RANK:201806
 ISOGL:YES
 
+COVER:planar_adventures.jpg
+LOGO:@/publisher_logos/Paizo_Publishing.png
+URL:WEBSITE|http://www.paizo.com/|Visit Paizo Publishing!
+URL:WEBSITE|http://www.paizo.com/communityuse|Paizo's Community Use Policy.
+URL:Paizo Publishing|http://paizo.com/products/btpya1am|Buy this publication from Paizo Publishing!
+DESC:There are worlds beyond the one we know: Planes of Fire and Water, Heaven and Hell, Dimensions of Dreams and Time. These are the realms of angels and demons, gods and goddesses—entire new realities where anything can happen! Pathfinder RPG Planar Adventures expands the world of the Pathfinder Roleplaying Game and transports your characters and campaigns into uncanny new worlds rife with both perilous dangers and unimaginable rewards. In these infinite planes of reality, characters will test more than just their mettle against the daunting challenges that confront them—they'll test their very souls!
+
+INFOTEXT:This dataset uses trademarks and/or copyrights owned by Paizo Inc., which are used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content. This dataset is not published, endorsed, or specifically approved by Paizo Publishing. For more information about Paizo's Community Use Policy, please visit paizo.com/communityuse. For more information about Paizo Publishing and Paizo products, please visit paizo.com.
+COPYRIGHT:Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
+COPYRIGHT:System Reference Document. Copyright 2000. Wizards of the Coast, Inc; Authors: Jonathan Tweet, Monte Cook, Skip Williams, based on material by E. Gary Gygax and Dave Arneson.
+COPYRIGHT:Pathfinder Roleplaying Game: Planar Adventures Copyright 2018, Paizo Publishing, LLC; Authors: Written by Tork Shaw, Mat Smith, and Jerome Virnich.
+
+
+
 #Data Files
 
 DATACONTROL:PA__datacontrols.lst
@@ -26,6 +40,9 @@ ABILITY:PA_abilities_race.lst
 ABILITY:PA_abilities_globalvar.lst
 ABILITY:PA_feats.lst
 RACE:PA_races.lst
+
+
+EXTRAFILE:OGL.txt
 
 
 #ABILITY:mpc_abilities.lst
